@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSE Quiz Society</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+        @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;800;900&display=swap);
+
+        :root {
+            --purple: #6B2DAA;
+            --purple-dark: #4F1F80;
+            --orange: #F5A623;
+            --light-bg: #faf7fd;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #222;
+            background: var(--light-bg);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.8em;
+            margin-bottom: 0.2em;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--purple);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--purple-dark);
+        }
+
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background: var(--purple);
+            padding: 50px 20px 30px 20px;
+            margin: -20px -20px 0 -20px;
+            border-bottom: 4px solid var(--orange);
+        }
+
+        header p {
+            color: white;
+            font-weight: 300;
+            font-size: 1.1em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1.5px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        nav a:hover {
+            border-bottom-color: var(--orange);
+        }
+
+        section {
+            padding: 50px 20px;
+            border-bottom: 1px solid #e6dcef;
+        }
+
+        article {
+            margin: 25px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: white;
+            border-left: 4px solid var(--orange);
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(107, 45, 170, 0.08);
+        }
+
+        article h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        ul:not(nav ul) {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+
+        ul:not(nav ul) li {
+            margin: 8px 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(107, 45, 170, 0.08);
+        }
+
+        form h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        form label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: var(--purple-dark);
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--purple);
+        }
+
+        button {
+            padding: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: var(--purple);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: var(--orange);
+        }
+
+        a {
+            color: var(--purple);
+        }
+
+        a:hover {
+            color: var(--orange);
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LSE Quiz Society</h1>
+        <p>The official quizzing society of the London School of Economics</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#committee">Committee</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the LSE Quiz Society! We are a community of students passionate about trivia, general knowledge, and competitive quizzing.</p>
+            <p>Whether you're a casual quizzer or aspiring to compete at University Challenge level, there's a place for you here.</p>
+            <h3 style="text-align:center;">What We Do</h3>
+            <ul>
+                <li>Weekly pub quizzes</li>
+                <li>Inter-university competitions - (Quizbowl)</li>
+                <li>University Challenge tryouts and training</li>
+                <li>Social events and quiz nights</li>
+            </ul>
+        </section>
+
+        <section id="committee">
+            <h2>Committee 2026-27</h2>
+            <ul>
+                <li><strong>President:</strong> Shlok Dev</li>
+                <li><strong>Vice President:</strong> [Name]</li>
+                <li><strong>Treasurer:</strong> [Name]</li>
+                <li><strong>Events Officer:</strong> [Name]</li>
+                <li><strong>Captain (University Challenge):</strong> [Name]</li>
+                <li><strong>Social Secretary:</strong> [Name]</li>
+            </ul>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Buzzer Practice</h3>
+                <p><strong>When:</strong> Every Wednesday, 3:30 PM</p>
+                <p><strong>Where:</strong> CLM.G.04</p>
+                <p>Reading Quizbowl packets across different difficulties and formats.</p>
+            </article>
+            <article>
+                <h3>Pub Quiz</h3>
+                <p><strong>When:</strong> Mondays, 7pm</p>
+                <p><strong>Where:</strong> The Three Tuns, on Campus</p>
+                <p>Low pressure quiz fun, across academic topics as well as trivia and pop culture!</p>
+            </article>
+            <article>
+                <h3>University Challenge Tryouts</h3>
+                <p><strong>When:</strong> Start of Autumn Term</p>
+                <p>Compete for a spot on the official LSE team of 4 people on TV!</p>
+            </article>
+        </section>
+
+        <section id="join">
+            <h2>Join Us</h2>
+            <p>Membership is open to all LSE students. Annual membership: £5.</p>
+            <h3 style="text-align:center;">Benefits</h3>
+            <ul>
+                <li>Discounted entry to weekly quizzes</li>
+                <li>Access to members-only training sessions</li>
+                <li>Eligibility for tournament selection</li>
+                <li>Socials and end-of-term dinner</li>
+            </ul>
+            <form>
+                <h3>Sign Up</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">LSE Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="course">Course / Programme:</label>
+                <input type="text" id="course" name="course">
+
+                <label for="year">Year of Study:</label>
+                <select id="year" name="year">
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="pg">Postgraduate</option>
+                </select>
+
+                <label for="experience">Quizzing Experience:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:quiz.society@lse.ac.uk">quiz.society@lse.ac.uk</a></p>
+            <p>Instagram: <a href="#">@lsequizsoc</a></p>
+            <p>Facebook: <a href="#">LSE Quiz Society</a></p>
+            <p>Discord: <a href="#">Join our server</a></p>
+            <p>LSE SU Page: <a href="#">lsesu.com/societies/quiz</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LSE Quiz Society. Affiliated with the LSE Students' Union.</p>
+        <p>Houghton Street, London WC2A 2AE</p>
+    </footer>
+</body>
+</html>
